@@ -1,5 +1,7 @@
 import React from "react";
 import Paisaje from "../../public/img/Paisaje.png";
+import AutoCarrusel from "../../public/img/AutoCarrusel.png";
+import GlobosCarrusel from "../../public/img/GlobosCarrusel.png";
 
 function Carousel(props){
 
@@ -24,9 +26,9 @@ function Carousel(props){
                         </article>
                     </div>
                     <div className="carousel-item">
-                        <img className="Fondo_Paisaje" src={Paisaje} alt="Fondo Paisaje"/>
+                        <img className="Fondo_Paisaje" src={GlobosCarrusel} alt="Fondo Globo"/>
                         <article className="container_art_1">
-                            <h2 className="titulo_1">Sed ut perspiciatis unde omnis iste natus</h2>
+                            <h1 className="titulo_1">Sed ut perspiciatis unde omnis iste natus</h1>
                             <section className="parrafo_1">
                                 <p>Otro asaid Sed ut perspiciatis unde omnis iste natus error
                                 sit voluptatem accusantium doloremque.</p> 
@@ -35,9 +37,9 @@ function Carousel(props){
                         </article>    
                     </div>
                     <div class="carousel-item">
-                        <img className="Fondo_Paisaje" src={Paisaje} alt="Fondo Paisaje"/> 
+                        <img className="Fondo_Paisaje" src={AutoCarrusel} alt="Fondo Auto"/> 
                         <article className="container_art_1">
-                            <h2 className="titulo_1">Sed ut perspiciatis unde omnis iste natus</h2>
+                            <h1 className="titulo_1">Sed ut perspiciatis unde omnis iste natus</h1>
                             <section className="parrafo_1">
                                 <p>Sed ut perspiciatis unde omnis iste natus error
                                 sit voluptatem accusantium doloremque.</p> 

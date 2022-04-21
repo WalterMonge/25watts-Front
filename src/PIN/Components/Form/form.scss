@@ -21,7 +21,10 @@ form
 *label
 {
     @extend %letras;
-    color: $color-negro-claro2;    
+    color: $color-negro-claro2;  
+    b{
+        color: red;
+    }  
 }
 
 .input
