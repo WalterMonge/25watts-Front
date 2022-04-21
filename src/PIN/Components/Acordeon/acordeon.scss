@@ -1,0 +1,40 @@
+@import "../../Styles/Sass/02-base/_color.scss";
+@import "../../Styles/Sass/01-utilitles/_mixins.scss";
+
+%letras 
+{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: .013rem;
+    letter-spacing: .015rem;
+    font-weight: 500;
+}
+
+.container_acordion
+{
+    left: 4rem;
+    width: 50%;
+}
+
+h3
+{
+    @extend %letras;
+    font-weight: 600;
+    color: $color-negro-claro2;
+}
+
+.parrafolista 
+{
+    @extend %letras;
+    color: $color-negro-claro2;
+}
+
+@media only screen and (max-width:767px)
+{  
+    .container_acordion
+    {
+        left: 0rem;
+        width: 100%;
+    }
+}    
+

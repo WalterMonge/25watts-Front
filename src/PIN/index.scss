@@ -1,0 +1,14 @@
+@import "./Styles/Sass/01-utilitles/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./Styles/Sass/02-base/_color.scss";
+@import "./Styles/Sass/01-utilitles/_mixins.scss";
+@import "./01_Header/header.scss";
+@import "./02_Main/main.scss";
+@import "./03_Aside/aside.scss";
+@import "./04-Formulario/formulario.scss";
+@import "./Components/Acordeon/acordeon.scss";
+@import "./Components/Carousel/carousel.scss";
+@import "./Components/Form/form.scss";
+@import "./Components/NavBar/nav.scss";
+@import "./Components/Secc_2/secc_2.scss";
+@import "./Components/Secc_3/secc_3.scss";

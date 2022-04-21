@@ -1,0 +1,79 @@
+/*SEGUNDA SECCION PAG*/
+
+@import "../../Styles/Sass/02-base/_color.scss";
+@import "../../Styles/Sass/01-utilitles/mixins.scss";
+
+%letras 
+{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: .013rem;
+    letter-spacing: .015rem;
+    font-weight: 500;
+}
+
+.container_secc_2
+{
+    display: flex;
+    align-items: center;
+    @include width-heigth (100%, 80vh);
+}
+
+.container_art_2
+{
+    width: 97.4%;
+    display: flex;
+    flex-direction: column;
+    border-left: 30px solid $color-naranja;
+}
+
+.titulo_2 
+{
+    width: 50%;
+    position: relative;
+    left: 20%;
+    padding-top: 1.5%;
+    margin: 0%; 
+    @include tipografia;
+    word-spacing: .45px;
+    letter-spacing: .55px;
+    color: $color-negro-claro;
+    font-weight: bold;
+
+    .titulo_abajo 
+    {
+        color: $color-naranja;
+        
+    }
+} 
+
+
+.parrafo_2 
+{
+    position: relative;
+    left: 20%;
+    width: 79%;
+    padding: 2% 0% 1.5%;
+    @extend %letras;
+    color: $color-negro-claro;
+    p 
+    {
+        margin: 0%;
+    }
+}
+
+@media only screen and (max-width:542px)
+{
+    .container_secc_2
+    {
+        margin: 65% 0% 65%;
+    }
+        .titulo_2
+        {
+            left: 10%;
+        }
+            .parrafo_2
+            {
+                left: 10%;
+            }
+}

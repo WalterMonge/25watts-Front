@@ -1,0 +1,78 @@
+@import "../../Styles/Sass/02-base/_color.scss";
+@import "../../Styles/Sass/01-utilitles/_mixins.scss";
+
+//NAV_MENU
+
+%letras 
+{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: .013rem;
+    letter-spacing: .015rem;
+    font-weight: 500;
+}
+
+.container_menu 
+{
+    position: absolute;
+    padding-left: 6%;
+    width:100%;
+    height: 12vh;
+    border-bottom: 1px solid $color-naranja;  
+}
+
+.nav_menu_1
+{
+    justify-content: end;
+    padding-top: 0%;
+    padding-right: 2%; 
+    @extend %letras;    
+}
+
+.container_ul
+{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menu__a 
+{
+    color: $color-blanco;  
+    text-decoration: none;  
+    &:hover 
+    {
+        color: $color-negro-claro2;
+    }   
+}  
+
+@media only screen and (max-width:991px)
+{
+    
+    .container_menu 
+    {
+        height: auto; 
+          
+    }
+        .container_ul
+        {   
+            
+            flex-direction: column;
+            width: 100%;
+            padding-left: 80%;
+        }
+            li
+            {
+                padding-top: 1%;
+            }
+                .text_abajo
+                {
+                    padding-top: 1%;
+                }
+}
+
+

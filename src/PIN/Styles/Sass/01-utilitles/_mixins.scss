@@ -1,0 +1,15 @@
+@import "./variables";
+@import "../02-base/_color.scss";
+
+@mixin width-heigth ($width:100%, $height:100vh) 
+{
+    width: $width;
+    height: $height;        
+}
+@mixin tipografia
+{
+    font-family:'Poppins', sans-serif,;
+    font-size: $font-size;
+    color: $color-blanco;
+    font-weight: normal;
+}

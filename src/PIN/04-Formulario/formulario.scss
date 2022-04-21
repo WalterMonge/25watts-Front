@@ -1,0 +1,60 @@
+@import "../Styles/Sass/02-base/_color.scss";
+@import "../Styles/Sass/01-utilitles/_mixins.scss";
+
+//CONTAINER SECC FORM
+
+.container_5
+{
+    @include width-heigth;
+    display: flex;
+    background: rgb(242,244,241);
+    background: linear-gradient(90deg, rgba(242,244,241,1) 70%, rgba(220,225,218,1) 70%);
+    justify-content: space-evenly;
+}
+
+.img_5
+{
+    align-self: center;
+    @include width-heigth(45%, 50%);
+    order: 1;
+}
+
+.container_form
+{
+    @include width-heigth(35%, 70%);
+    align-self: center;
+}
+
+.titulo_5
+{
+    margin: 0%;
+    font-family:'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    word-spacing: .45px;
+    letter-spacing: .55px;
+    color: $color-negro-claro;
+    .titulo_abajo_otro_color
+    {
+        margin: 0% 0% 15%;
+        color: $color-naranja
+    }
+}
+
+@media only screen and (max-width:767px)
+{
+    .container_5{
+        justify-content: start;
+        padding-left: 7%;
+    }
+        .container_form
+        {
+            //background-size: cover;
+            width: 40%;
+            
+        } 
+            .img_5
+            {
+                display:none
+            }
+}

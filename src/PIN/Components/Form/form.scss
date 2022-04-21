@@ -1,0 +1,64 @@
+@import "../../Styles/Sass/02-base/_color.scss";
+@import "../../Styles/Sass/01-utilitles/_mixins.scss";
+
+//FORM
+
+%letras 
+{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: .013rem;
+    letter-spacing: .015rem;
+    font-weight: 500;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+*label
+{
+    @extend %letras;
+    color: $color-negro-claro2;    
+}
+
+.input
+{
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid $color-negro-claro2;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 0rem;
+}
+
+.boton_2 
+{
+    @include width-heigth(100px, 45px);
+    margin-top: 10%;
+    background: $color-naranja;
+    border-radius: 1.5rem;
+    padding: 2% 5.5%;
+    border: 0px;
+    color: $color-blanco;
+    @extend %letras;
+    &:hover 
+    {
+        background: #bf6e39;
+    }    
+}
+
+@media only screen and (max-width:767px)
+{
+    label
+    {
+        color: $color-naranja;
+    } 
+        .input
+        {
+            border-bottom: 1px solid $color-naranja 
+        }
+}

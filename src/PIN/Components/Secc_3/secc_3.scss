@@ -1,0 +1,125 @@
+@import "../../Styles/Sass/02-base/_color.scss";
+@import "../../Styles/Sass/01-utilitles/_mixins.scss";
+
+%letras 
+{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: .013rem;
+    letter-spacing: .015rem;
+    font-weight: 500;
+}
+    /*TERCERA SECCION PAG */
+
+.fondo_dos_colores
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include width-heigth (100%, 50rem);
+    background: rgb(242,244,241);
+    background: linear-gradient(90deg, rgba(242,244,241,1) 70%, rgba(220,225,218,1) 70%);
+}
+
+.container_img_2
+{
+    background: transparent url(../../public/img/Casa.png) 0% 0% no-repeat padding-box;
+    background-size: cover;
+    background-repeat: round;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;  
+    @include width-heigth(67%, 70%); 
+}
+
+.container_fondo_naranja
+{
+    display: flex;
+    flex-flow: column nowrap;  
+    justify-content: center;
+    align-items: center;
+    @include width-heigth(49%, 54%);
+    background-color: $color-naranja;
+}
+
+.container_art_3
+{
+    width: 80%;
+}
+
+.parrafo_titulo 
+{
+    margin: 0%;
+    color: $color-blanco;
+    @extend %letras;
+    font-size: 1rem;
+}
+
+.titulo_3 
+{
+    padding-bottom: 5%;  
+    @include tipografia;
+    font-size: 2rem;
+    letter-spacing: .55px;
+}
+
+.parrafo_3 
+{
+    margin: 0%;
+    color: $color-blanco;
+    @extend %letras;
+}
+
+.boton_next
+{
+    position: absolute;
+    top: 82%;
+    right: 12%;
+    @include width-heigth(7%, 11%);
+}
+
+.boton_previous
+{
+    position: absolute;
+    top: 82%;
+    left: 72%;
+    @include width-heigth(7%, 11%);
+}
+
+@media only screen and (max-width:770px)
+{
+    .boton_previous
+    {
+        width: 10%;
+        left: 65%;
+    }
+    .boton_next
+    {
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width:767px)
+{
+    .container_img_2
+    {
+        @include width-heigth(100%, 90%);
+    }
+        .container_fondo_naranja
+        {
+            width: 56%;
+        }
+            .titulo_3
+            {
+                padding: 0%;
+                font-family: 1.7rem;
+            }
+                .boton_next
+                {
+                    top:89%;
+                }
+                .boton_previous
+                {
+                    top: 89%;         
+                }
+}

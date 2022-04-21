@@ -1,0 +1,119 @@
+@import "../../Styles/Sass/02-base/_color.scss";
+@import "../../Styles/Sass/01-utilitles/_mixins.scss";
+
+/*ARTICULO_1*/
+
+%letras 
+{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: .013rem;
+    letter-spacing: .015rem;
+    font-weight: 500;
+}
+
+.container_carousel
+{
+    @include width-heigth;
+}
+
+.Fondo_Paisaje
+{
+    @include width-heigth;
+}
+
+.container_art_1
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding-left: 7%;
+    position: absolute;
+    bottom: 32%;
+}
+
+.titulo_1 
+{
+    width: 55%;
+    margin: 0%;
+    padding-bottom: 3%;
+    @include tipografia;
+    word-spacing: .3rem;
+    letter-spacing: .1rem; 
+    font-weight: bold;
+} 
+
+.parrafo_1 
+{
+    width: 38%;
+    padding-bottom: 2%;   
+    color: $color-blanco;
+    @extend %letras;           
+}
+
+.boton_1 
+{ 
+    @include width-heigth(140px, 45px);              
+    @extend %letras;
+    background: $color-naranja;
+    border-radius: 1.5rem;
+    border: 0px;
+    color: $color-blanco; 
+    &:hover 
+    {
+        background: #bf6e39;
+    }    
+}
+
+.container_botones
+{
+    margin: 0%;
+    bottom: 22%;
+    left: 7%;
+    justify-content: start;
+}
+
+.boton_carousel
+{
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:767px)
+{
+    .titulo_1
+    {
+        width: 100%;
+    }
+        .parrafo_1
+        {
+            width: 100%;
+        }
+            .boton_1{
+                width: 100%;
+            }
+    
+}
+
+@media only screen and (max-width:900px)
+{
+    .titulo_1
+    {
+        width: 100%;
+    }
+        .parrafo_1
+        {
+            width: 100%;
+        }
+            .boton_1{
+                @include width-heigth(140px, 45px);              
+                background: $color-naranja;
+                border-radius: 1.5rem;
+                border: 0px;
+                color: $color-blanco; 
+                &:hover 
+                    {
+                        background: #bf6e39;
+                    }    
+            }
+
+}
