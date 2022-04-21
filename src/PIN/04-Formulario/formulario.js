@@ -38,7 +38,7 @@ function Formulario(props){
     
     function handleSend(event){
         event.preventDefault()
-        axios.post("http://127.0.0.1:8000/api/guardar-formulario",Data).then(response=>{
+        axios.post("https://api-25watts.herokuapp.com/api/guardar-formulario",Data).then(response=>{
             console.log(response)
             confirmacionEnvio()
             setData({name:'', email:'', phone:'', message:''})
